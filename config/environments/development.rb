@@ -26,6 +26,10 @@ Rails.application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+  # Expands the lines which load the assets
+
+  config.assets.cache_store = :null_store  # Disables the Asset cache
+  config.sass.cache = false  # Disable the SASS compiler cache
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
@@ -38,4 +42,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  # Do not compress assets
+  config.assets.compress = false
+
+
 end
