@@ -15,6 +15,10 @@ gem 'autoprefixer-rails'
 gem 'bcrypt'
 gem 'mail_form'
 gem 'simple_form'
+gem 'will_paginate', '~>3.0'
+gem 'paperclip', '~> 4.2'
+gem "wysiwyg-rails"
+gem 'font-awesome-rails'
 #
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -61,3 +65,4 @@ group :production do
 end
 
 gem 'puma'
+
