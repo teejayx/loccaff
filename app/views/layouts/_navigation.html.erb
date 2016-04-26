@@ -52,7 +52,7 @@
     <div class="row clearfix">
       <nav id="mymenuleft">
         <ul class="sf-menu">
-          <li class="current selectedLava"><a href="index.html">Home</a>
+          <li class="current selectedLava"><%= link_to "Home", root_path %>
             <ul>
               <li><a href="index2-revolution.html">Home v2 Revolution</a></li>
               <li class="current"><a href="index3-nivo.html">Home v3 Nivo</a></li>
@@ -134,7 +134,7 @@
               </li>
             </ul>
           </li>
-          <li><a href="blog-right-sidebar.html">Blog</a>
+          <li><%= link_to "Blog", articles_path %>
             <ul>
               <li><a href="blog-right-sidebar.html">Blog Large Image</a></li>
               <li><a href="blog-medium.html">Blog Medium Image</a></li>

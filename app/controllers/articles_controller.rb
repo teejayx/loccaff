@@ -14,8 +14,14 @@ class ArticlesController < ApplicationController
   end
 
   def create
+
+
     #render plain: params[:article].inspect
     @article = Article.new(article_params)
+
+    if params[:article][:image].blank?
+      @article.image = nil
+    end
     if @article.save
       flash[:notice] = "Article was successfully created"
       #do something
@@ -30,6 +36,9 @@ class ArticlesController < ApplicationController
   end
 
   def update
+    if params[:article][:image].blank?
+      @article.image = nil
+    end
 
     if @article.update(article_params)
       flash[:notice] = "Article was successfully updated"
