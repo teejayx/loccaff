@@ -1,22 +1,191 @@
-<diV class="container">
-<h1>Listing all articles</h1>
+<br>
+
+<div class="tac"><h3 class="col-title"> Listing all articles  </h3><span class="liner"></span></div>
 <%= link_to "Create new articles", new_article_path %>
 
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-  </tr>
-  <% @articles.each do|article| %>
-  <tr>
-    <td><%= article.title %></td>
-    <td><%= article.description %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'show', article_path(article)  %></td>
-    <td><%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"} %></td>
-  </tr>
+
+
+
+<div class="page-content">
+  <div class="row clearfix mbs">
+    <div class="grid_8 posts s-thumbnails">
+      <% @articles.each do |article| %>
+      <div class="post clearfix">
+        <a href="blog-single-image.html" class="thumb-small fll"><img src="images/assets/blog-m1.jpg" alt="#"></a>
+        <div class="content-two-third">
+          <div class="meta-box">
+            <h3><%= link_to article.title, article_path(article) %></h3>
+            <div class="meta-more">
+              <span><i class="icon-user"></i> <a href="#">behzad</a></span>
+              <span><i class="icon-time"></i> <a href="#">27 Aug, 2013</a></span>
+              <span><i class="icon-comments"></i> <a href="#">13 Comments</a></span>
+            </div><!-- meta more -->
+          </div><!-- meta box -->
+          <%= truncate(article.description, length: 100) %>
+
+          <%= link_to article_path(article), :class => "tbutton small" do %>
+              <span>Read More<i class="mii icon-angle-right"></i> </span>
+          <% end %>
+
+
+        </div><!-- content two third -->
+      </div><!-- post image -->
       <% end %>
 
-</table>
-</diV>
+
+
+
+      <div class="pagination-tt clearfix">
+        <ul>
+          <li><span>1</span></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><span>...</span></li>
+          <li><a href="#">27</a></li>
+        </ul>
+        <span class="pages">Page 1 of 27</span>
+      </div><!-- pagination -->
+    </div><!-- grid 8 posts -->
+
+    <div class="grid_4 sidebar">
+      <div class="widget metro-social clearfix">
+        <ul>
+          <li><a class="rssf" href="http://feeds.feedburner.com/#"><i class="icon-rss"></i></a><h4>10578</h4><span>Subscribers</span></li>
+          <li><a class="fb" href="http://www.facebook.com/theme20"><i class="icon-facebook"></i></a><h4>25602</h4><span>Likes</span></li>
+          <li><a class="tw" href="http://www.twitter.com/behzadg1"><i class="icon-twitter"></i></a><h4>15748</h4><span>Followers</span></li>
+        </ul>
+      </div><!-- widget metro social -->
+
+      <div class="widget">
+        <form action="search.html" id="searchwidget" method="get">
+          <input name="search" type="text" onfocus="if (this.value=='Start Searching...') this.value = '';" onblur="if (this.value=='') this.value = 'Start Searching...';" value="Start Searching..." placeholder="Start Searching ...">
+          <button type="submit"><i class="icon-search"></i></button>
+        </form><!-- end form -->
+      </div><!-- widget search -->
+
+      <div class="widget">
+        <h3 class="col-title"> Categories </h3><span class="liner"></span>
+        <ul class="list">
+          <li><a href="#"><i class="icon-caret-right"></i> News and updates (7) </a></li>
+          <li><a href="#"><i class="icon-caret-right"></i> Interviews (13)</a></li>
+          <li><a href="#"><i class="icon-caret-right"></i> Graphic and web design (34)</a></li>
+          <li><a href="#"><i class="icon-caret-right"></i> Wordpress Hacks (19)</a></li>
+          <li><a href="#"><i class="icon-caret-right"></i> Freebie's (17)</a></li>
+        </ul><!-- end list -->
+      </div><!-- widget list -->
+
+      <div class="widget tags">
+        <h3 class="col-title"> Tags </h3><span class="liner"></span>
+        <a href="#" class="#" title="17 topic"><i class="icon-tag"></i> corporate </a>
+        <a href="#" class="#" title="44 topic"><i class="icon-tag"></i> theme </a>
+        <a href="#" class="#" title="10 topic"><i class="icon-tag"></i> css3 </a>
+        <a href="#" class="#" title="2 topic"><i class="icon-tag"></i> premium </a>
+        <a href="#" class="#" title="29 topic"><i class="icon-tag"></i> html5 </a>
+        <a href="#" class="#" title="4 topic"><i class="icon-tag"></i> business </a>
+      </div><!-- widget tags -->
+
+      <div class="widget">
+        <ul class="tabs">
+          <li><a href="#popular" class="active">Popular</a></li>
+          <li><a href="#recent">Recent</a></li>
+          <li><a href="#comments">Comments</a></li>
+        </ul><!-- tabs -->
+
+        <ul class="tabs-content">
+          <li id="popular" class="active">
+            <ul class="tab-content-items">
+              <li class="clearfix">
+                <a class="post-thumbnail" href="blog-single-slider.html"><img width="60" height="60" src="images/assets/thumb1.jpg" alt="#"></a>
+                <h3><a href="blog-single-slider.html">Next Elections Resolutions: What could be the worst?</a></h3>
+                <div class="post-meta">
+                  <span><a href="#"><i class="icon-comments"></i>20</a></span>
+                  <span><i class="icon-eye-open"></i>2127</span>
+                  <span><a href="#"><i class="icon-heart-empty"></i>2413</a></span>
+                </div>
+              </li>
+              <li class="clearfix">
+                <a class="post-thumbnail" href="blog-single-image.html"><img width="60" height="60" src="images/assets/thumb2.jpg" alt="#"></a>
+                <h3><a href="blog-single-image.html">Praesent adipiscing mi eget ipsum imperdiet</a></h3>
+                <div class="post-meta">
+                  <span><a href="#"><i class="icon-comments"></i>14</a></span>
+                  <span><i class="icon-eye-open"></i>1804</span>
+                  <span><a href="#"><i class="icon-heart-empty"></i>1701</a></span>
+                </div>
+              </li>
+              <li class="clearfix">
+                <a class="post-thumbnail" href="blog-single-video.html"><img width="60" height="60" src="images/assets/thumb3.jpg" alt="#"></a>
+                <h3><a href="blog-single-video.html">Paul Thomson on Post with SoundCloud</a></h3>
+                <div class="post-meta">
+                  <span><a href="#"><i class="icon-comments"></i>11</a></span>
+                  <span><i class="icon-eye-open"></i>1512</span>
+                  <span><a href="#"><i class="icon-heart-empty"></i>1100</a></span>
+                </div>
+              </li>
+            </ul>
+          </li><!-- popular content -->
+          <li id="recent">
+            <ul class="tab-content-items">
+              <li class="clearfix">
+                <a class="post-thumbnail" href="blog-single-image.html"><img width="60" height="60" src="images/assets/thumb4.jpg" alt="#"></a>
+                <h3><a href="blog-single-image.html">Itaque earum rerum hic tenetur a sapiente</a></h3>
+                <div class="post-meta">
+                  <span><a href="#"><i class="icon-comments"></i>20</a></span>
+                  <span><i class="icon-time"></i>30 Aug</span>
+                </div>
+              </li>
+              <li class="clearfix">
+                <a class="post-thumbnail" href="blog-single-slider.html"><img width="60" height="60" src="images/assets/thumb5.jpg" alt="#"></a>
+                <h3><a href="blog-single-slider.html">Delectus ut aut reiciendis voluptatibus</a></h3>
+                <div class="post-meta">
+                  <span><a href="#"><i class="icon-comments"></i>14</a></span>
+                  <span><i class="icon-time"></i>28 Aug</span>
+                </div>
+              </li>
+              <li class="clearfix">
+                <a class="post-thumbnail" href="blog-single-video.html"><img width="60" height="60" src="images/assets/thumb6.jpg" alt="#"></a>
+                <h3><a href="blog-single-video.html">Tenetur a sapiente delectus, ut aut reiciendis</a></h3>
+                <div class="post-meta">
+                  <span><a href="#"><i class="icon-comments"></i>11</a></span>
+                  <span><i class="icon-time"></i>27 Aug</span>
+                </div>
+              </li>
+            </ul>
+          </li><!-- tab content -->
+          <li id="comments">
+            <ul class="tab-content-items">
+              <li class="clearfix">
+                <a class="post-thumbnail" href="#"><img width="60" height="60" src="images/assets/avatar1.jpg" alt="#"></a>
+                <p><strong><a href="#">Alexander</a> <i>says:</i></strong> Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis </p>
+              </li>
+              <li class="clearfix">
+                <a class="post-thumbnail" href="#"><img width="60" height="60" src="images/assets/avatar2.jpg" alt="#"></a>
+                <p><strong><a href="#">Xina</a> <i>says:</i></strong> Sapiente delectus, ut aut reiciendis itaque earum rerum hic tenetur a vem.</p>
+              </li>
+              <li class="clearfix">
+                <a class="post-thumbnail" href="#"><img width="60" height="60" src="images/assets/avatar3.jpg" alt="#"></a>
+                <p><strong><a href="#">Michele</a> <i>says:</i></strong> Tenetur a sapiente delectus, ut aut reiciendis </p>
+              </li>
+            </ul>
+          </li><!-- tab content -->
+        </ul><!-- end tabs -->
+      </div><!-- widget tabs -->
+
+      <div class="widget">
+        <h3 class="col-title"> Instagram Stream </h3><span class="liner"></span>
+        <iframe src="http://snapwidget.com/in/?u=dGhlbWVmb3Jlc3R8aW58MTA4fDN8M3x8bm98MXxmYWRlSW58b25TdGFydHxubw==&v=19913" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height: 327px" ></iframe>
+      </div><!-- widget instagram -->
+
+    </div><!-- grid 4 sidebar -->
+
+  </div><!-- row -->
+</div><!-- end page content -->
+
+
+
+
+
+
+
