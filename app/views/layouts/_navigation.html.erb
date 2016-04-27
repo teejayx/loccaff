@@ -53,34 +53,11 @@
       <nav id="mymenuleft">
         <ul class="sf-menu">
           <li class="current selectedLava"><%= link_to "Home", root_path %>
-            <ul>
-              <li><a href="index2-revolution.html">Home v2 Revolution</a></li>
-              <li class="current"><a href="index3-nivo.html">Home v3 Nivo</a></li>
-              <li><a href="index4-circular.html">Home v4 Circular</a></li>
-              <li><a href="index5-3d.html">Home v5 3D Slicebox</a></li>
-              <li><a href="index6-flex.html">Home v6 FlexSlider</a></li>
-              <li><a href="index7-modern.html">Home v7 ModernSlider</a></li>
-              <li><a href="index8-iview.html">Home v8 iView</a></li>
-              <li><a href="index9-kwiks.html">Home v9 Kwiks</a></li>
-              <li><a href="index-magazine.html">Magazine vFeatured</a></li>
-              <li><a href="index-magazine-left-sidebar.html">Magazine Left Sidebar</a></li>
-              <li><a href="index-landing.html">Landing Version</a></li>
-              <li><a href="#"> 3rd Menu </a>
-                <ul>
-                  <li><a href="#"> Sub menu 1 </a></li>
-                  <li><a href="#"> Next Menu </a>
-                    <ul>
-                      <li><a href="#"> Sub menu 1 </a></li>
-                      <li><a href="#"> Sub menu 2 </a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <ul></ul>
           </li>
-          <li><a href="shop-sidebar.html">Shop</a>
+          <li><a href="shop-sidebar.html"><%= link_to "Blog", articles_path %></a>
             <ul>
-              <li><a href="shop-fullwide.html">Shop Fullwide</a></li>
+              <li><%= link_to "New", new_article_path %></li>
               <li><a href="shop-sidebar.html">Shop With Sidebar</a></li>
               <li><a href="shop-both-sidebar.html">Shop Both sidebar</a></li>
               <li><a href="shop-both-sidebar-left.html">Shop Both Sidebar Left</a></li>
@@ -93,7 +70,7 @@
               <li><a href="shop-my-account.html">My Account</a></li>
             </ul>
           </li>
-          <li><a href="#">Pages</a>
+          <li><%= link_to "PHOTO GALLERY" %>
             <ul>
               <li><a href="icons-awesome.html"><i class="icon-ticket"></i>361 Retina Icons</a></li>
               <li><a href="icons-metro.html"><i class="icons-social-envato"></i>300 Metro Icons</a></li>
