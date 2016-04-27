@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2e41a3e-246e-4116-8931-10c70ba6a015" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pages/about.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pages/home.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
     </list>
     <ignored path="loccaf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,8 +42,8 @@
       <file leaf-file-name="_footer.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+            <state relative-caret-position="356">
+              <caret line="25" column="183" selection-start-line="25" selection-start-column="183" selection-end-line="25" selection-end-column="183" />
               <folding />
             </state>
           </provider>
@@ -516,12 +515,12 @@
       <workItem from="1461491490783" duration="6202000" />
       <workItem from="1461505566028" duration="17546000" />
       <workItem from="1461651079275" duration="14452000" />
-      <workItem from="1461770772895" duration="567000" />
+      <workItem from="1461770772895" duration="1042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38767000" />
+    <option name="totallyTimeSpent" value="39242000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="629" y="23" width="1291" height="1127" extended-state="0" />
@@ -866,8 +865,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+        <state relative-caret-position="356">
+          <caret line="25" column="183" selection-start-line="25" selection-start-column="183" selection-end-line="25" selection-end-column="183" />
           <folding />
         </state>
       </provider>
