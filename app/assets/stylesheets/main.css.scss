@@ -47,11 +47,16 @@ table {
 	margin: 0px
 }
 
+
+.grey-line {
+  background: image-url('8.jpg');
+}
+
 /*	General Styling
 ----------------------------------------------------------------------*/
 body {
 	margin: 0 auto;
-	background: #333 url(images/backgrounds/4.jpg) repeat fixed top center;
+	background: image_url('39.jpg') repeat fixed  top center;
 	color: #7A7A7A;
 	line-height: 18px;
 	font-family: "Tahoma", Helvetica, Arial;

@@ -1,116 +1,211 @@
-<h1> Showing selected article</h1>
+
+<div class="page-content">
+  <div class="row clearfix mbs">
+    <h1> Showing selected article</h1>
+
+    <div class="grid_8 posts">
+      <div class="post">
+        <div class="thumb-big"><img src="images/assets/post1.jpg" alt="#"></div>
+        <div class="meta-box">
+          <img class="image-author" src="images/assets/author1.jpg" alt="#">
+          <h3> Neque porro quisquam est qui dolorem ipsum quia dolor </h3>
+          <div class="meta-more">
+            <span><i class="icon-user"></i> <a href="#">behzad</a></span>
+            <span><i class="icon-time"></i> <a href="#">27 Aug, 2013</a></span>
+            <span><i class="icon-comments"></i> <a href="#">13 Comments</a></span>
+            <span><i class="icon-link"></i> in <a href="#">news</a>, <a href="#">photo</a>, <a href="#">3d</a></span>
+          </div><!-- meta more -->
+        </div><!-- meta box -->
+        <p><strong>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</strong><br><br>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+
+        <p><strong>1914 translation by H. Rackham</strong><br><br><img class="fll" src="images/assets/portfolio-thumb10.jpg" alt="#" width="400">"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+
+        <div class="share-post mb mtf clearfix">
+          <div class="btn-share"><a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a></div>
+          <div class="btn-share"><div id="fb-root"></div><div class="fb-like" data-send="false" data-layout="box_count" data-show-faces="false"></div></div>
+          <div class="btn-share"><script type="IN/Share" data-counter="top"></script></div>
+          <div class="btn-share"><script data-counter="top" type="XING/Share"></script></div>
+          <div class="btn-share"><g:plusone size="tall"></g:plusone></div>
+          <div class="btn-share"><a class='DiggThisButton DiggMedium'></a></div>
+          <div class="btn-share"><script type="text/javascript" src="http://www.reddit.com/static/button/button2.js"></script></div>
+        </div><!-- close share post -->
+      </div><!-- end post image -->
+
+      <div class="author-box">
+        <img class="image-author-big fll" src="images/assets/author-big.jpg" alt="#" width="160" height="160">
+        <div class="author-details">
+          <h3> Behzad <small>- author</small> </h3>
+          <p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+          <div class="author-social social">
+            <a href="#" class="toptip" title="Follow me on Twitter"><i class="icon-twitter"></i></a>
+            <a href="#" class="toptip" title="Google Plus"><i class="icon-google-plus"></i></a>
+            <a href="#" class="toptip" title="Follow me on Facebook"><i class="icon-facebook"></i></a>
+            <a href="#" class="toptip" title="Behzad Posts Feed"><i class="icon-rss"></i></a>
+          </div><!-- author social -->
+        </div><!-- author details -->
+      </div><!-- meta box -->
+
+      <div class="post-links">
+        <a class="fll" href="" title="#"><i class="icon-long-arrow-left"></i> Next</a>
+        <a class="flr" href="" title="#">Previous <i class="icon-long-arrow-right"></i></a>
+      </div><!-- post links -->
+
+      <div class="article-actions">
+        <%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-xs btn-primary" %>
+        <%= link_to "Delete this article", article_path(@article), method: :delete, data: {confirm: "Are you sure you want to delete the article?"}, class: "btn btn-xs btn-danger" %>
+        </div>
+
+
+
+    </div><!-- grid 8 posts -->
+
+    <div class="grid_4 sidebar">
+      <div class="widget metro-social clearfix">
+        <ul>
+          <li><a class="fb" href="https://www.facebook.com/groups/316740082470/#"><i class="icon-facebook"></i></a><h4>25602</h4><span>Likes</span></li>
+          <li><a class="tw" href=""><i class="icon-twitter"></i></a><h4>15748</h4><span>Followers</span></li>
+          <li><a class="rssf" href="http://feeds.feedburner.com/#"><i class="icon-rss"></i></a><h4>10578</h4><span>Subscribers</span></li>
+        </ul>
+      </div><!-- widget metro social -->
+
+      <div class="widget">
+        <form action="search.html" id="searchwidget" method="get">
+          <input name="search" type="text" onfocus="if (this.value=='Start Searching...') this.value = '';" onblur="if (this.value=='') this.value = 'Start Searching...';" value="Start Searching..." placeholder="Start Searching ...">
+          <button type="submit"><i class="icon-search"></i></button>
+        </form><!-- end form -->
+      </div><!-- widget search -->
+
+      <div class="widget">
+        <h3 class="col-title"> Categories </h3><span class="liner"></span>
+        <ul class="list">
+          <li><a href="#"><i class="icon-caret-right"></i> News and updates (7) </a></li>
+          <li><a href="#"><i class="icon-caret-right"></i> Interviews (13)</a></li>
+          <li><a href="#"><i class="icon-caret-right"></i> Graphic and web design (34)</a></li>
+          <li><a href="#"><i class="icon-caret-right"></i> Wordpress Hacks (19)</a></li>
+          <li><a href="#"><i class="icon-caret-right"></i> Freebie's (17)</a></li>
+          <li><a href="#"><i class="icon-caret-right"></i> Themes and Templates (49)</a></li>
+        </ul><!-- end list -->
+      </div><!-- widget list -->
+
+      <div class="widget tags">
+        <h3 class="col-title"> Tags </h3><span class="liner"></span>
+        <a href="#" class="#" title="17 topic"><i class="icon-tag"></i> corporate </a>
+        <a href="#" class="#" title="44 topic"><i class="icon-tag"></i> theme </a>
+        <a href="#" class="#" title="10 topic"><i class="icon-tag"></i> css3 </a>
+        <a href="#" class="#" title="2 topic"><i class="icon-tag"></i> premium </a>
+        <a href="#" class="#" title="29 topic"><i class="icon-tag"></i> html5 </a>
+        <a href="#" class="#" title="4 topic"><i class="icon-tag"></i> business </a>
+        <a href="#" class="#" title="20 topic"><i class="icon-tag"></i> all purpose </a>
+        <a href="#" class="#" title="14 topic"><i class="icon-tag"></i> jquery </a>
+        <a href="#" class="#" title="1 topic"><i class="icon-tag"></i> muse template </a>
+        <a href="#" class="#" title="4 topic"><i class="icon-tag"></i> minimalist </a>
+      </div><!-- widget tags -->
+
+      <div class="widget">
+        <ul class="tabs">
+          <li><a href="#popular" class="active">Popular</a></li>
+          <li><a href="#recent">Recent</a></li>
+          <li><a href="#comments">Comments</a></li>
+        </ul><!-- tabs -->
+
+        <ul class="tabs-content">
+          <li id="popular" class="active">
+            <ul class="tab-content-items">
+              <li class="clearfix">
+                <a class="post-thumbnail" href="blog-single-slider.html"><img width="60" height="60" src="images/assets/thumb1.jpg" alt="#"></a>
+                <h3><a href="blog-single-slider.html">Next Elections Resolutions: What could be the worst?</a></h3>
+                <div class="post-meta">
+                  <span><a href="#"><i class="icon-comments"></i>20</a></span>
+                  <span><i class="icon-eye-open"></i>2127</span>
+                  <span><a href="#"><i class="icon-heart-empty"></i>2413</a></span>
+                </div>
+              </li>
+              <li class="clearfix">
+                <a class="post-thumbnail" href="blog-single-image.html"><img width="60" height="60" src="images/assets/thumb2.jpg" alt="#"></a>
+                <h3><a href="blog-single-image.html">Praesent adipiscing mi eget ipsum imperdiet</a></h3>
+                <div class="post-meta">
+                  <span><a href="#"><i class="icon-comments"></i>14</a></span>
+                  <span><i class="icon-eye-open"></i>1804</span>
+                  <span><a href="#"><i class="icon-heart-empty"></i>1701</a></span>
+                </div>
+              </li>
+              <li class="clearfix">
+                <a class="post-thumbnail" href="blog-single-video.html"><img width="60" height="60" src="images/assets/thumb3.jpg" alt="#"></a>
+                <h3><a href="blog-single-video.html">Paul Thomson on Post with SoundCloud</a></h3>
+                <div class="post-meta">
+                  <span><a href="#"><i class="icon-comments"></i>11</a></span>
+                  <span><i class="icon-eye-open"></i>1512</span>
+                  <span><a href="#"><i class="icon-heart-empty"></i>1100</a></span>
+                </div>
+              </li>
+            </ul>
+          </li><!-- popular content -->
+          <li id="recent">
+            <ul class="tab-content-items">
+              <li class="clearfix">
+                <a class="post-thumbnail" href="blog-single-image.html"><img width="60" height="60" src="images/assets/thumb4.jpg" alt="#"></a>
+                <h3><a href="blog-single-image.html">Itaque earum rerum hic tenetur a sapiente</a></h3>
+                <div class="post-meta">
+                  <span><a href="#"><i class="icon-comments"></i>20</a></span>
+                  <span><i class="icon-time"></i>30 Aug</span>
+                </div>
+              </li>
+              <li class="clearfix">
+                <a class="post-thumbnail" href="blog-single-slider.html"><img width="60" height="60" src="images/assets/thumb5.jpg" alt="#"></a>
+                <h3><a href="blog-single-slider.html">Delectus ut aut reiciendis voluptatibus</a></h3>
+                <div class="post-meta">
+                  <span><a href="#"><i class="icon-comments"></i>14</a></span>
+                  <span><i class="icon-time"></i>28 Aug</span>
+                </div>
+              </li>
+              <li class="clearfix">
+                <a class="post-thumbnail" href="blog-single-video.html"><img width="60" height="60" src="images/assets/thumb6.jpg" alt="#"></a>
+                <h3><a href="blog-single-video.html">Tenetur a sapiente delectus, ut aut reiciendis</a></h3>
+                <div class="post-meta">
+                  <span><a href="#"><i class="icon-comments"></i>11</a></span>
+                  <span><i class="icon-time"></i>27 Aug</span>
+                </div>
+              </li>
+            </ul>
+          </li><!-- tab content -->
+          <li id="comments">
+            <ul class="tab-content-items">
+              <li class="clearfix">
+                <a class="post-thumbnail" href="#"><img width="60" height="60" src="images/assets/avatar1.jpg" alt="#"></a>
+                <p><strong><a href="#">Alexander</a> <i>says:</i></strong> Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis </p>
+              </li>
+              <li class="clearfix">
+                <a class="post-thumbnail" href="#"><img width="60" height="60" src="images/assets/avatar2.jpg" alt="#"></a>
+                <p><strong><a href="#">Xina</a> <i>says:</i></strong> Sapiente delectus, ut aut reiciendis itaque earum rerum hic tenetur a vem.</p>
+              </li>
+              <li class="clearfix">
+                <a class="post-thumbnail" href="#"><img width="60" height="60" src="images/assets/avatar3.jpg" alt="#"></a>
+                <p><strong><a href="#">Michele</a> <i>says:</i></strong> Tenetur a sapiente delectus, ut aut reiciendis </p>
+              </li>
+            </ul>
+          </li><!-- tab content -->
+        </ul><!-- end tabs -->
+      </div><!-- widget tabs -->
+
+      <div class="widget">
+        <h3 class="col-title"> Instagram Stream </h3><span class="liner"></span>
+        <iframe src="http://snapwidget.com/in/?u=dGhlbWVmb3Jlc3R8aW58MTA4fDN8M3x8bm98MXxmYWRlSW58b25TdGFydHxubw==&v=19913" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height: 327px" ></iframe>
+      </div><!-- widget instagram -->
+
+      <div class="widget ads">
+        <h3 class="col-title"> Ads </h3><span class="liner"></span>
+        <a href="#" class="#" title="Advertise"><img src="images/ads1.gif" alt="#"></a>
+      </div><!-- widget ads -->
+
+    </div><!-- grid 4 sidebar -->
+
+  </div><!-- row -->
+</div><!-- end page content -->
 
 
 
 
 
-  <div class="post">
-    <div class="thumb-big"><%= image_tag @article.image.url, width: '100%' %></div>
-    <div class="meta-box">
-      <img class="image-author" src="images/assets/author1.jpg" alt="#">
-      <h3> <%= @article.title %></h3>
-      <div class="meta-more">
-        <span><i class="icon-user"></i> <a href="#">behzad</a></span>
-        <span><i class="icon-time"></i><%= @article.created_at %></span>
-        <span><i class="icon-comments"></i> <a href="#">13 Comments</a></span>
-        <span><i class="icon-link"></i> in <a href="#">news</a>, <a href="#">photo</a>, <a href="#">3d</a></span>
-      </div><!-- meta more -->
-    </div><!-- meta box -->
-<p><strong>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</strong><br><br><%= @article.description %> </p>
-<p><strong>1914 translation by H. Rackham</strong><br><br><img class="fll" src="images/assets/portfolio-thumb10.jpg" alt="#" width="400">"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
-
-<div class="share-post mb mtf clearfix">non
-  <div class="btn-share"><a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a></div>
-  <div class="btn-share"><div id="fb-root"></div><div class="fb-like" data-send="false" data-layout="box_count" data-show-faces="false"></div></div>
-  <div class="btn-share"><script type="IN/Share" data-counter="top"></script></div>
-  <div class="btn-share"><script data-counter="top" type="XING/Share"></script></div>
-  <div class="btn-share"><g:plusone size="tall"></g:plusone></div>
-  <div class="btn-share"><a class='DiggThisButton DiggMedium'></a></div>
-  <div class="btn-share"><script type="text/javascript" src="http://www.reddit.com/static/button/button2.js"></script></div>
-</div><!-- close share post -->
-</div><!-- end post image -->
-
-<div class="author-box">
-  <img class="image-author-big fll" src="images/assets/author-big.jpg" alt="#" width="160" height="160">
-  <div class="author-details">
-    <h3> Behzad <small>- author</small> </h3>
-    <p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
-    <div class="author-social social">
-      <a href="#" class="toptip" title="Follow me on Twitter"><i class="icon-twitter"></i></a>
-      <a href="#" class="toptip" title="Google Plus"><i class="icon-google-plus"></i></a>
-      <a href="#" class="toptip" title="Follow me on Facebook"><i class="icon-facebook"></i></a>
-      <a href="#" class="toptip" title="Behzad Posts Feed"><i class="icon-rss"></i></a>
-    </div><!-- author social -->
-  </div><!-- author details -->
-</div><!-- meta box -->
-
-<div class="post-links">
-  <a class="fll" href="blog-single-video.html" title="#"><i class="icon-long-arrow-left"></i> Nemo enim ipsam voluptatem quia voluptas sit</a>
-  <a class="flr" href="blog-single-slider.html" title="#">Neque porro quisquam est, qui <i class="icon-long-arrow-right"></i></a>
-</div><!-- post links -->
-
-<!-- Disqus Comment Form -->
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-  /* <![CDATA[ */
-  var disqus_shortname = 'officialtemplate';
-  (function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-  /* ]]> */
-</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<!-- Disqus Comment Form -->
-
-</div><!-- grid 8 posts -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<%= link_to "Edit this article", edit_article_path(@article)  %>
-
-<%=  link_to "Back to articles listing", articles_path %>
 
 
 
